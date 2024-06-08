@@ -59,7 +59,7 @@ export interface Actividad {
   /**
    * Categoría tributaria de la actividad.
    */
-  categoria: string;
+  categoria: number;
   /**
    * Indica si la actividad está afecta a impuestos.
    */
@@ -253,7 +253,7 @@ function getActividades(contenedorElement: HTMLElement): Actividad[] {
 
     const giro = columnsElements[0].text.trim();
     const codigo = parseInt(columnsElements[1].text.trim());
-    const categoria = columnsElements[2].text.trim();
+    const categoria = columnsElements[2].text.trim() === 'Primera' ? 1 : 2;
     const afecta = columnsElements[3].text.trim() === 'Si';
     const fecha = toDate(columnsElements[4].text.trim());
 
@@ -370,7 +370,7 @@ export async function getAndParseStc(rut: string, dv: string): Promise<Situacion
   const contenedorElement = root.querySelector('div#contenedor');
 
   if (!contenedorElement) {
-    throw new Error('No se encontró el div contenedor');
+    throw new Error('No se logró cargar correctamente la situación tributaria');
   }
 
   return {

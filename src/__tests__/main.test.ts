@@ -51,7 +51,7 @@ describe('Obtiene y parsea correctamente la situacion tributaria de SII de Haulm
     expect(actividadConsultoria).toBeDefined();
     expect(actividadConsultoria!.codigo).toBe(actividadConsultoriaCodigo);
     expect(actividadConsultoria!.giro).toBe('ACTIVIDADES DE CONSULTORIA DE INFORMATICA Y DE GESTION DE INSTALACIONE');
-    expect(actividadConsultoria!.categoria).toBe('Primera');
+    expect(actividadConsultoria!.categoria).toBe(1);
     expect(actividadConsultoria!.afecta).toBe(true);
     expect(actividadConsultoria!.fecha.getFullYear()).toBe(2017);
   });

@@ -48,7 +48,7 @@ async function obtenerDatosTributarios() {
     {
       "giro": "ACTIVIDADES DE CONSULTORIA DE INFORMATICA Y DE GESTION DE INSTALACIONE",
       "codigo": 620200,
-      "categoria": "Primera",
+      "categoria": 1,
       "afecta": true,
       "fecha": "2017-10-17T00:00:00.000Z"
     }
