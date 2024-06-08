@@ -1,5 +1,7 @@
 # 🚀 situacion-tributaria-sii
 
+[![npm version](https://badge.fury.io/js/situacion-tributaria-sii.svg)](https://badge.fury.io/js/situacion-tributaria-sii)
+
 Liberia para obtener la situación tributaria de un contribuyente en el SII.
 
 ## Instalación
