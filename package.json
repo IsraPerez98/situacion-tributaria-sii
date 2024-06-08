@@ -21,7 +21,12 @@
     "url": "git+https://github.com/IsraPerez98/situacion-tributaria-sii.git"
   },
   "keywords": [
-    "sii"
+    "sii",
+    "situacion tributaria",
+    "chile",
+    "servicio de impuestos internos",
+    "impuestos",
+    "información tributaria"
   ],
   "author": "Israel Perez",
   "license": "MIT",
