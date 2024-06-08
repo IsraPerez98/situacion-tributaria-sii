@@ -13,7 +13,7 @@ npm install situacion-tributaria-sii
 ```javascript
 const { getSituacionTributaria } = require('situacion-tributaria-sii');
 
-function obtenerDatosTributarios() {
+async function obtenerDatosTributarios() {
   const rut = '11111111';
   const dv = '1';
   const situacionTributaria = await getSituacionTributaria(rut, dv);
@@ -24,7 +24,7 @@ function obtenerDatosTributarios() {
 ```typescript
 import { getSituacionTributaria } from 'situacion-tributaria-sii';
 
-function obtenerDatosTributarios() {
+async function obtenerDatosTributarios() {
   const rut = '11111111';
   const dv = '1';
   const situacionTributaria = await getSituacionTributaria(rut, dv);
