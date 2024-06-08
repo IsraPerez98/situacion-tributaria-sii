@@ -78,7 +78,7 @@ describe('Obtiene y parsea correctamente la situacion tributaria de SII de Haulm
     expect(situacionTributaria.documentosTimbrados!.length).toBeGreaterThan(0);
   });
 
-  test('Debe tener timbres de boletaa electronica con un año asociado', () => {
+  test('Debe tener timbres de boleta electronica con un año asociado', () => {
     const textoBoleta = 'Boleta Exenta Electronica';
 
     const timbreBoletaElectronica = situacionTributaria.documentosTimbrados!.find(
