@@ -1,6 +1,6 @@
 {
   "name": "situacion-tributaria-sii",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Liberia para consultar situación tributaria en SII",
   "main": "lib/index.js",
   "module": "lib/index.js",
